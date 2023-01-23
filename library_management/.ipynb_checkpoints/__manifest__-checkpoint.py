@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Odoo Academy',
+    'name': 'Library management',
 
-    'summary': 'Academy app to manage Training',
+    'summary': 'Library management, Academy app to manage Training',
 
     'description': """
-        Academy modules:
-        - Courses
-        - Sessions
-        - Atendees
+        Library management
     """,
 
     'author': 'Itnnovation',

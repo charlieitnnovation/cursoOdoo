@@ -25,4 +25,6 @@
     'data': [],
 
     'demo': [],
+    
+    'license': 'Other proprietary',
 }
