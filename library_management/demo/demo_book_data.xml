@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="library.book" id="library_book_id_001">
+            <field name="name">El corazón de la piedra</field>
+            <field name="authors">José María García López</field>
+            <field name="editors">Nocturna</field>
+            <field name="publisher"></field>
+            <field name="edition_year">2013</field>
+            <field name="isbn">978-84-939750-7-4</field>
+            <field name="genre">Novela</field>
+        </record>
+        <record model="library.book" id="library_book_id_002">
+            <field name="name">Salmos de vísperas</field>
+            <field name="authors">Esteban Hernández Castelló</field>
+            <field name="editors">Obra social de Caja de Avila</field>
+            <field name="publisher"></field>
+            <field name="edition_year">2003</field>
+            <field name="isbn">84-932914-8-X</field>
+            <field name="genre">Musical</field>
+        </record>
+        <record model="library.book" id="library_book_id_003">
+            <field name="name">La música en las catedrales españolas del Siglo de Oro</field>
+            <field name="authors">Robert Stevenson</field>
+            <field name="editors">Alianza Música</field>
+            <field name="publisher"></field>
+            <field name="edition_year">1993</field>
+            <field name="isbn">84-206-8562-3</field>
+            <field name="genre">Biografía</field>
+        </record>
+        <record model="library.book" id="library_book_id_004">
+            <field name="name">Tomás Luis de Victoria: A guide to research</field>
+            <field name="authors">Eugene Casjen Cramer</field>
+            <field name="editors">Garland Publishing Inc.</field>
+            <field name="publisher"></field>
+            <field name="edition_year">1998</field>
+            <field name="isbn">0 8153 2096 5</field>
+            <field name="genre">Consulta</field>
+        </record>
+        <record model="library.book" id="library_book_id_005">
+            <field name="name">Studies in the Music of Tomás Luis de Victoria</field>
+            <field name="authors">Eugene Casjen Cramer</field>
+            <field name="editors">Ashgate</field>
+            <field name="publisher"></field>
+            <field name="edition_year">2001</field>
+            <field name="isbn">0-7546-0241-9</field>
+            <field name="genre">Musical</field>
+        </record>
+        <record model="library.book" id="library_book_id_006">
+            <field name="name">La polifonía clásica</field>
+            <field name="authors">Samuel Rubio</field>
+            <field name="editors">Biblioteca "la ciudad de Dios", Real Monasterio de El Escorial</field>
+            <field name="publisher"></field>
+            <field name="edition_year">1956</field>
+            <field name="isbn"></field>
+            <field name="genre">Musical</field>
+        </record>
+
+    </data>
+</odoo>

@@ -19,9 +19,12 @@
     
     'depends': ['base'],
     
-    'data': [],
+    'data': [
+    ],
 
-    'demo': [],
+    'demo': [
+        'demo/demo_book_data.xml',
+    ],
     
     'license': 'Other proprietary',
 }
