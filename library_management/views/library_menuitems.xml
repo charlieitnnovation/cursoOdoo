@@ -16,6 +16,7 @@
         <menuitem id="library_book_list_main_menu"
                   name="Biblioteca"
                   sequence="1"
+                  web_icon="library_management,static/description/icon.png"
         />
 
         <menuitem id="library_book_list_sub_menu"
