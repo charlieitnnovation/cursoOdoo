@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="group_librarian_id" model="res.groups">
+        <field name="name">Librarian</field>
+    </record>
+
+    <record id="group_customer_id" model="res.groups">
+        <field name="name">Customer</field>
+    </record>
+    
+    <record id="library_book_only_active_modify" model="ir.rule">
+        <field name="name">Only active books can be modified</field>
+        <field name="perm_read" eval="0"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+        <field name="domain_force">[('active', '=', true)]</field>
+        <field name="model_id" ref="model_library_book"/>
+    </record>
+    
+</odoo>

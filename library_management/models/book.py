@@ -28,3 +28,6 @@ class Book(models.Model):
     genre = fields.Char(
         string = 'Genre',
     )
+    active = fields.Boolean(
+        string = "Activo",
+    )

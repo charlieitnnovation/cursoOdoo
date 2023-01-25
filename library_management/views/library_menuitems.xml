@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    
+        <record id="library_book_list_act_window" model="ir.actions.act_window">
+            <field name="name">Books</field>
+            <field name="res_model">library.book</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Crear el primer registro de libros
+                </p>
+            </field>
+        </record>
+        
+        <menuitem id="library_book_list_main_menu"
+                  name="Biblioteca"
+                  sequence="1"
+        />
+
+        <menuitem id="library_book_list_sub_menu"
+                  name="Biblioteca"
+                  parent="library_book_list_main_menu"
+                  sequence="2"
+        />
+
+                <menuitem id="library_book_list_form_menu"
+                  name="Libros"
+                  parent="library_book_list_sub_menu"
+                  sequence="3"
+                  action="library_book_list_act_window"
+        />
+
+    </data>
+</odoo>
