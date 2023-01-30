@@ -53,6 +53,7 @@ class Book(models.Model):
             ('Musical', 'Musical'),
             ('Biografía', 'Biografía'),
             ('Consulta', 'Consulta'),
+            ('Otra', 'Otra'),
         ],
     )
     active = fields.Boolean(
