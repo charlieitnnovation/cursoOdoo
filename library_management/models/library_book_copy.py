@@ -11,6 +11,8 @@ class LibrayBookCopy(models.Model):
     book_id = fields.Many2one(
         string = 'Libro',
         comodel_name = 'library.book',
+        required = True,
+        ondelete = "cascade",
     )
     internal_reference = fields.Char(
         string = 'Referencia interna',
