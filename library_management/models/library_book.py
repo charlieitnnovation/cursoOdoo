@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 
-class Book(models.Model):
+class LibrayBook(models.Model):
     
     _name = 'library.book'
     _description = 'Book information'
@@ -58,6 +58,7 @@ class Book(models.Model):
     )
     active = fields.Boolean(
         string = "Activo",
+        default = True,
     )
     note = fields.Text(
         string = "Nota",

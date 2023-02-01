@@ -9,6 +9,7 @@
             <field name="edition_year">2013</field>
             <field name="isbn">978-84-939750-7-4</field>
             <field name="genre">Novela</field>
+            <field name="active">True</field>
         </record>
         <record model="library.book" id="library_book_id_002">
             <field name="name">Salmos de vísperas</field>
@@ -18,6 +19,7 @@
             <field name="edition_year">2003</field>
             <field name="isbn">84-932914-8-X</field>
             <field name="genre">Musical</field>
+            <field name="active">True</field>
         </record>
         <record model="library.book" id="library_book_id_003">
             <field name="name">La música en las catedrales españolas del Siglo de Oro</field>
@@ -27,6 +29,7 @@
             <field name="edition_year">1993</field>
             <field name="isbn">84-206-8562-3</field>
             <field name="genre">Biografía</field>
+            <field name="active">True</field>
         </record>
         <record model="library.book" id="library_book_id_004">
             <field name="name">Tomás Luis de Victoria: A guide to research</field>
@@ -36,6 +39,7 @@
             <field name="edition_year">1998</field>
             <field name="isbn">0 8153 2096 5</field>
             <field name="genre">Consulta</field>
+            <field name="active">True</field>
         </record>
         <record model="library.book" id="library_book_id_005">
             <field name="name">Studies in the Music of Tomás Luis de Victoria</field>
@@ -45,6 +49,7 @@
             <field name="edition_year">2001</field>
             <field name="isbn">0-7546-0241-9</field>
             <field name="genre">Musical</field>
+            <field name="active">True</field>
         </record>
         <record model="library.book" id="library_book_id_006">
             <field name="name">La polifonía clásica</field>
@@ -54,6 +59,7 @@
             <field name="edition_year">1956</field>
             <field name="isbn"></field>
             <field name="genre">Musical</field>
+            <field name="active">True</field>
         </record>
 
     </data>

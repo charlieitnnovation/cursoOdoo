@@ -12,24 +12,60 @@
                 </p>
             </field>
         </record>
-        
+
+        <record id="library_book_copy_act_window" model="ir.actions.act_window">
+            <field name="name">Books copy</field>
+            <field name="res_model">library.book.copy</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Crear el primer registro de libros
+                </p>
+            </field>
+        </record>
+
+        <record id="library_book_rental_act_window" model="ir.actions.act_window">
+            <field name="name">Rental</field>
+            <field name="res_model">library.rental</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Crear el primer registro de renta de libros
+                </p>
+            </field>
+        </record>
+
         <menuitem id="library_book_list_main_menu"
-                  name="Biblioteca"
-                  sequence="1"
-                  web_icon="library_management,static/description/icon.png"
+            name="Biblioteca"
+            sequence="1"
+            web_icon="library_management,static/description/icon.png"
         />
 
         <menuitem id="library_book_list_sub_menu"
-                  name="Biblioteca"
-                  parent="library_book_list_main_menu"
-                  sequence="2"
+            name="Biblioteca"
+            parent="library_book_list_main_menu"
+            sequence="2"
         />
 
-                <menuitem id="library_book_list_form_menu"
-                  name="Libros"
-                  parent="library_book_list_sub_menu"
-                  sequence="3"
-                  action="library_book_list_act_window"
+        <menuitem id="library_book_list_form_menu"
+            name="Libros"
+            parent="library_book_list_sub_menu"
+            sequence="3"
+            action="library_book_list_act_window"
+        />
+
+        <menuitem id="library_book_copy_form_menu"
+            name="Copias de Libros"
+            parent="library_book_list_sub_menu"
+            sequence="4"
+            action="library_book_copy_act_window"
+        />
+
+        <menuitem id="library_rental_list_form_menu"
+            name="Rentas"
+            parent="library_book_list_sub_menu"
+            sequence="5"
+            action="library_book_rental_act_window"
         />
 
     </data>

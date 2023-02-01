@@ -1,3 +1,9 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 library_librarian_access,library librarian,model_library_book,group_librarian_id,1,1,1,1
 library_customer_access,library customer,model_library_book,group_customer_id,1,0,0,0
+library_rental_librarian_access,library.rental librarian,model_library_rental,group_librarian_id,1,1,1,1
+library_rental_customer_access,library.rental customer,model_library_rental,group_customer_id,1,0,0,0
+library_rental_line_librarian_access,library.rental.line librarian,model_library_rental_line,group_librarian_id,1,1,1,1
+library_rental_line_customer_access,library.rental.line customer,model_library_rental_line,group_customer_id,1,0,0,0
+library_book_copy_librarian_access,library.book.copy librarian,model_library_book_copy,group_librarian_id,1,1,1,1
+library_book_copy_customer_access,library.book.copy customer,model_library_book_copy,group_customer_id,1,0,0,0
