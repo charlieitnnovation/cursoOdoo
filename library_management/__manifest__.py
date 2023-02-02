@@ -26,6 +26,9 @@
         'views/library_book_views.xml',
         'views/library_book_copy_views.xml',
         'views/library_rental_views.xml',
+        'wizard/rental_report_wizard.xml',
+        'report/rental_report.xml',
+        'views/library_web_templates.xml',
     ],
 
     'demo': [

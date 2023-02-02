@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_library_rental_report_wizard_form" model="ir.ui.view">
+        <field name="name">view.library.rental.report.wizard.form</field>
+        <field name="model">library.rental.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Reporte de renta de libros">
+                <group>
+                    <group>
+                        <field name="partner_id"
+                               options="{'no_quick_create': True, 'no_create_edit' : True}"/>
+                    </group>
+                    <group>
+                        <field name="book_id"
+                               options="{'no_quick_create': True, 'no_create_edit' : True}"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="open_rental_report" type="object"
+                        string="Reporte" class="oe_highlight"/>
+                    <button string="Cancelar" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="lauch_rental_report_wizard" model="ir.actions.act_window">
+        <field name="name">Reporte de rentas</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">library.rental.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_library_rental_report_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="library_report_rental_form_menu"
+        name="Reporte de rentas"
+        parent="library_book_list_sub_menu"
+        sequence="6"
+        action="lauch_rental_report_wizard"
+    />
+
+</odoo>                

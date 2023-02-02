@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="library_website">
+            <t t-call="website.layout">
+                <t t-set="title">Librería</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1>Rentas disponibles</h1>
+                        <t t-foreach="libros_disponibles" t-as="libro">
+                            <h3>
+                                <t t-esc="libro['libro']"/>
+                                <p>Referencia:
+                                    <t t-esc="libro['referencia']"/>
+                                </p>
+                            </h3>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

@@ -43,7 +43,7 @@ class LibraryRentalLine(models.Model):
         comodel_name = 'library.rental',
     )
     book_id = fields.Many2one(
-        string = 'Libro',
+        string = 'Libro base',
         comodel_name = 'library.book',
     )
     book_copy_id = fields.Many2one(

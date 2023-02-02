@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="report_library_list_books">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <div class="text-center">
+                        <h2>Detalle de rentas</h2>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>Cliente</td>
+                            <td><t t-esc="form['partner_id'][1]"/></td>
+                        </tr>
+                        <tr>
+                            <td>Libro</td>
+                            <td><t t-esc="form['book_id'][1]"/></td>
+                        </tr>
+                    </table>
+
+                    <table class="table table-bordered mt32">
+                        <thead>
+                            <tr>
+                                <th name="th_number" class="text-left">
+                                    <span>Número</span>
+                                </th>
+                                <th name="th_reference" class="text-left">
+                                    <span>Referencia</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <t t-set="numero" t-value="0"/>
+                        <t t-foreach="list_books" t-as="book">
+                            <t t-set="numero" t-value="numero + 1"/>
+                            <tr>
+                                <td>
+                                    <span t-esc="numero"/>
+                                </td>
+                                <td>
+                                    <span t-esc="book['reference']"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </table>
+                    
+                </div>
+            </t>
+        </t>
+    </template>
+    
+    <record id="action_report_library_list_books" model="ir.actions.report">
+        <field name="name">Detalle de rentas por cliente</field>
+        <field name="model">library.rental.report.wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">library_management.report_library_list_books</field>
+        <field name="report_file">library_management.report_library_list_books</field>
+        <field name="binding_model_id" ref="model_library_rental_report_wizard"/>
+        <field name="binding_type">report</field>
+    </record>
+    
+</odoo>

@@ -7,3 +7,5 @@ library_rental_line_librarian_access,library.rental.line librarian,model_library
 library_rental_line_customer_access,library.rental.line customer,model_library_rental_line,group_customer_id,1,0,0,0
 library_book_copy_librarian_access,library.book.copy librarian,model_library_book_copy,group_librarian_id,1,1,1,1
 library_book_copy_customer_access,library.book.copy customer,model_library_book_copy,group_customer_id,1,0,0,0
+library_library_rental_report_wizard_librarian_access,library.rental.report.wizard librarian,model_library_rental_report_wizard,group_librarian_id,1,1,1,1
+library_library_rental_report_wizard_customer_access,library.rental.report.wizard customer,model_library_rental_report_wizard,group_customer_id,1,1,1,1
